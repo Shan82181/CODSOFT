@@ -1,0 +1,182 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.font-gilroy {
+    font-family: 'Gilroy', sans-serif !important;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+}
+#nav{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#nav1{
+    display: flex;
+    align-items: center;
+}
+#nav2{
+    display: flex;
+    align-items: center;
+}
+#nav3{
+    display: flex;
+    align-items: center;
+}
+#menu{
+    font-size: 12px;
+    font-weight: 500;
+    border: 0.5px solid black;
+    border-radius: 50px;
+    padding-left: 8px ;
+    padding-right: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 200;
+    font-size: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    text-align: center;
+}
+i{
+    border: 0.5px solid black;
+    border-radius: 50px;
+    padding-left: 8px ;
+    padding-right: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+#nav2 h2{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#login{
+    background-color: white;
+    border: 0.5px solid black;
+    border-radius: 50px;
+    padding-left: 8px ;
+    padding-right: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+#SignUp{
+    background-color: rgb(12, 233, 159);
+    border: none;
+    /* border: 0.5px solid black; */
+    border-radius: 50px;
+    padding-left: 8px ;
+    padding-right: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+#img1{
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(-40deg);
+    border-radius: 50px;
+    
+}
+#img2{
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(-30deg);
+    border-radius: 50px;
+    
+}
+#img3{
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(-20deg);
+    border-radius: 50px;
+    
+}
+#img4{
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(-10deg);
+    border-radius: 50px;
+    
+}
+#img5{
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50px;
+    
+}
+#bottom{
+    height: 50px;
+    width: 100%;
+    background-color: aqua;
+    position: absolute;
+    bottom: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+#bottom_left{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    font-size: small;
+    font-weight: 100;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#bottom_right{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
+#bottom_right h4{
+    font-size: small;
+    font-weight: 100;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#booking{
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translate(-50%,-50%);
+}
+#booking_B{
+    background-color: rgb(251, 6, 6);
+    color: white;
+    border: 0.5px solid black;
+    border-radius: 50px;
+    padding-left: 10px ;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
