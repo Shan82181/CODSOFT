@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@300;400;500;600;700:800:900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color:#081b29;
+    color: #ededed;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:transparent;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index:100;
+    transition: .3s;
+}
+.header.sticky{
+  background: #081b29;
+}
+
+.logo{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color:#ededed;
+}
+.navbar a{
+    color: #ededed;
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin-left: 1.5rem;
+    transition: 0.3s;
+}
+.navbar a:hover,.navbar a.active{
+    color: aqua;
+}
+#menuIcon{
+    font-size: 2.5rem;
+    cursor: pointer;
+    display: none;
+}
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+.Home{
+    display: flex;
+    align-items: center;
+    padding:10rem 9% ;  
+}
+.HomeContent{
+    max-width: 60rem;
+}
+.HomeContent h1{
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+.HomeContent .textAnimate{
+    position: relative;
+    width: 32rem;
+}
+.HomeContent .textAnimate h3{
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: transparent;
+  -webkit-text-stroke: 1px aqua;
+  background-image: linear-gradient(aqua, aqua);
+  background-repeat: no-repeat ;
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: homeBgText 6s linear infinite;
+  animation-delay: 2s;
+}
+.HomeContent .textAnimate h3::before{
+  content: " ";
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  border-right: 2px solid aqua;
+  z-index: -1;
+  animation: homeCursorText 6s linear infinite;
+  animation-delay: 2s;
+
+}
+
+.HomeContent p{
+    font-size: 1.6rem;
+    margin: 2rem 0 4rem;
+}
+.button{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 32rem;
+    height: 5rem;
+}
+.button .btn{
+    background-color: aqua;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 100%;
+    border: .2rem solid aqua;
+    border-radius: .8rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #081b29;
+    z-index: 1;
+    overflow: hidden;
+}
+.button .btn:nth-child(2){
+    background-color: transparent;
+    color: aqua;
+}
+.button .btn:nth-child(2):before{
+    background-color: aqua;
+}
+.button .btn:nth-child(2):hover{
+    color: #081b29;
+}
+.button .btn:nth-child(1):hover{
+    color: aqua;
+}
+.button .btn::before{
+    content: '';
+    background-color: #081b29;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0%;
+    z-index: -1;
+    transition: .5s;
+}
+.button .btn:hover::before{
+    width: 100%;
+}
+.socialMedia{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 170px;
+}
+.socialMedia a{
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  background-color: transparent;
+  border: .2rem solid aqua;
+  color: aqua;
+  border-radius: 50%;
+  z-index: 1;
+  overflow: hidden;
+}
+.socialMedia a::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: aqua;
+  height:100%;
+  width: 0%;
+  z-index: -1;
+  transition: 0.5s;
+  color:#081b29 ;
+}
+.socialMedia a:hover::before{
+  width: 100%;
+}
+.socialMedia a:hover{
+  color: #081b29;
+  transition: 0.5s;
+}
+.aboutMe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10rem 9% 2rem;
+}
+.heading{
+  font-size: 5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+span{
+  color: aqua;
+}
+.aboutMeContent{
+  text-align: center;
+}
+.aboutMeContent h3{
+  font-size: 2.6rem;
+}
+.aboutMeContent p{
+  font-size: 1.6rem;
+  margin: 2rem 0 3rem;
+}
+.buttons{
+  left: 27rem;
+  
+}
+.education{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10rem 9% 2rem;
+}
+.title{
+  font-size: 2.6rem;
+  margin: 0 0 2rem 0 ;
+}
+.box{
+  border-left: .2rem solid aqua;;
+}
+.educationContent{
+  position: relative;
+  padding-left: 2rem;
+}
+.content{
+  position: relative;
+  padding: 1.5rem;
+  border: .2rem solid aqua;
+  border-radius: .6rem;
+  margin-bottom: 2rem;
+  z-index: 1;
+  overflow: hidden;
+}
+.content::before{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width:0%;
+  background-color: #154e84;
+  z-index: -1;
+  transition: 0.5s;
+}
+.content:hover::before{
+  width: 100%;
+}
+.year{
+  font-size: 1.5rem;
+  color: aqua;
+  padding-bottom: .5rem;
+}
+.year i{
+  padding-right: .5rem;
+}
+.projects{
+  padding: 10rem 9% 2rem;
+  
+}
+.projectContent h3{
+  margin: 0;
+}
+.content p{
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+.content a{
+  color: aqua;
+}
+.contact{
+  min-height: auto;
+  padding-bottom: 7rem;
+}
+.contact form{
+  max-width: 70rem;
+  margin: 0 auto;
+  text-align: center;
+}
+.contact form .input-box{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.contact form .input-box .input-field{
+  position: relative;
+  width: 49%;
+  margin: .8rem 0;
+}
+.contact form .input-box .input-field input,
+.contact form .textarea-field textarea{
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  color: #ededed;
+  background-color: transparent;
+  border-radius: .6rem;
+  border: .2rem solid aqua;
+}
+.contact form .input-box .input-field input::placeholder,
+.contact form .textarea-field textarea::placeholder{
+  color: #ededed;
+}
+.contact form .textarea-field{
+  position: relative;
+  margin: .8rem 0 2.7rem;
+  display: flex;
+}
+.contact form .textarea-field textarea{
+  resize: none;
+}
+.footer{
+  display: flex;
+  justify-content: space-between;;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 9%;
+  background-color: #154e84;
+}
+.footer-text p{
+  font-size: 1.6rem;
+}
+.footer-iconTop a{
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: .8rem;
+  background-color: aqua;
+  border: .2rem solid aqua;
+  border-radius: .6rem;
+}
+.footer-iconTop a i{
+  color:#081b29 ;
+  font-size: 1.4rem;
+}
+@keyframes homeBgText{
+  0%,10%,100%{
+    background-position: -33rem 0;
+  }
+  65%,85%{
+    background-position: 0 0;
+  }
+}
+@keyframes homeCursorText{
+  0%,10%,100%{
+    width: 0;
+  }
+  65%,78%,85%{
+   width: 100%;
+  }
+}
