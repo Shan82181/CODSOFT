@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple Calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1 class="heading">Calculator</h1>
+	<div id="calculator">
+		<input type="text" id="display" readonly>
+    <div class="container">
+      <div class="row row1">
+        <div id="buttons">
+          <button onclick="clearDisplay()"id="clear">AC</button>
+          <button onclick="wantToDelete()" id="delete">DE</button>
+          <button onclick="wantToDisplay('.')"class="num decimal" value=".">.</button>
+          <button onclick="wantToDisplay('/')"class="operator" value="/">/</button>
+        </div>
+      </div>
+      <div class="row row2">
+        <div id="buttons">
+          <button onclick="wantToDisplay('7')"class="num" value="7">7</button>
+          <button onclick="wantToDisplay('8')"class="num" value="8">8</button>
+          <button onclick="wantToDisplay('9')"class="num" value="9">9</button>
+          <button onclick="wantToDisplay('*')"class="operator" value="*">*</button>
+        </div>
+      </div>
+      <div class="row row3">
+        <div id="buttons">
+          <button onclick="wantToDisplay('4')" class="num" value="4">4</button>
+          <button onclick="wantToDisplay('5')"class="num" value="5">5</button>
+          <button onclick="wantToDisplay('6')"class="num" value="6">6</button>
+          <button onclick="wantToDisplay('-')"class="operator" value="-">-</button>
+        </div>
+      </div>
+      <div class="row row4">
+        <div id="buttons">
+          <button onclick="wantToDisplay('1')"class="num" value="1">1</button>
+          <button onclick="wantToDisplay('2')"class="num" value="2">2</button>
+          <button onclick="wantToDisplay('3')"class="num" value="3">3</button>
+          <button onclick="wantToDisplay('+')" class="operator" value="+">+</button>
+        </div>
+      </div>
+      <div class="row row5">
+        <div id="buttons">
+          <button onclick="wantToDisplay('0')"class="num" value="0">0</button>
+          <button onclick="wantToDisplay('00')">00</button>
+          <button onclick="calculate()"id="equals">=</button>
+        </div>
+      </div>
+    </div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
